@@ -60,3 +60,12 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# 로그인 기능 구현
+gem "devise"
+group :development do
+  # 로그인 유저 변경 기능 구현
+  gem "any_login"
+  # 모델 시각화
+  gem 'rails_db', '2.0.4'
+end
