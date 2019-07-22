@@ -71,3 +71,5 @@ group :development do
   # 모델 시각화
   gem 'rails_db', '2.0.4'
 end
+
+
