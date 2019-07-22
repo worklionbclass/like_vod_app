@@ -1,0 +1,12 @@
+<a href="/posts/new">새 글 쓰기</a>
+<hr>
+<a href="/posts/new">새 글 쓰기</a>
+<hr>
+<% @posts.each do |post| %>
+    title : <%= post.title %>
+    content : <%= post.content %>
+    <a href="/posts/<%= post.id %>/show">보기</a>
+    <a href="/posts/<%= post.id %>/edit">수정</a>
+    <a href="/posts/<%= post.id %>/destroy">삭제</a>
+    <hr>
+<% end %>
