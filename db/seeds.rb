@@ -12,3 +12,8 @@ User.create(email: "2@2", password: "111111", password_confirmation: "111111")
 User.create(email: "3@3", password: "111111", password_confirmation: "111111")
 User.create(email: "4@4", password: "111111", password_confirmation: "111111")
 User.create(email: "5@5", password: "111111", password_confirmation: "111111")
+
+Post.destroy_all
+
+Post.create(title: "1번 글 제목입니다.", content: "1번 글 내용입니다.")
+Post.create(title: "오늘은 꿀잠 자는 날", content: "쿨쿨")

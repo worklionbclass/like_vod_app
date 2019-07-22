@@ -63,6 +63,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # 로그인 기능 구현
 gem "devise"
+
+# 개발 버전에서만 사용
 group :development do
   # 로그인 유저 변경 기능 구현
   gem "any_login"
