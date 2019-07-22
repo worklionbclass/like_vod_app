@@ -5,5 +5,6 @@
   cd crud_debug_app
   bundle install
   rake db:migrate
+  rake db:seed
   rails s
 ```
