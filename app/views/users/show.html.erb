@@ -1,0 +1,23 @@
+<h2><%= @user.email %>의 마이페이지</h2>
+
+<h4>내가 좋아요한 글 들</h4>
+
+<% @user.liked_posts.each do |post| %>
+  title : <%= post.title %>
+  content : <%= post.content %>
+  <a href="/posts/<%= post.id %>/show">보기</a>
+  <a href="/posts/<%= post.id %>/edit">수정</a>
+  <a href="/posts/<%= post.id %>/destroy">삭제</a>
+  <hr>
+<% end %>
+
+<h4>내가 작성한 글 들</h4>
+
+<% @user.posts.each do |post| %>
+  title : <%= post.title %>
+  content : <%= post.content %>
+  <a href="/posts/<%= post.id %>/show">보기</a>
+  <a href="/posts/<%= post.id %>/edit">수정</a>
+  <a href="/posts/<%= post.id %>/destroy">삭제</a>
+  <hr>
+<% end %>
